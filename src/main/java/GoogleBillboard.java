@@ -5,7 +5,7 @@ public class GoogleBillboard {
 		public static void main(final String[] args)  
 		{        
 		    String digits = e.substring(2,12);
-		    double dNum = Double.parseDouble(digits);
+		    long dNum = Long.parseLong(digits);
 		    System.out.println(dNum);
 		    for (int i=0;i<e.length();i++){
 		  	double sNum = 0; 
@@ -15,16 +15,17 @@ public class GoogleBillboard {
 			  }
 		    }
 		}  
-		public boolean isPrime(double dNum)  
+		public boolean isPrime(long dNum)  
 		{
-		  if (dNum>2){
-		    for (int i=2; i<=Math.sqrt(dNum);i++){
-		      if (dNum%i==0) return false;
-		    }
+		 // if (dNum>2){
+		    for (int i=2; i<Math.sqrt(dNum);i++){
+		      if (dNum%i==0) {
+			      return false;
+		   }
 		    return true;
 		  }
-		  if (dNum ==2) return true;
-		  return false; 
+		//  if (dNum ==2) return true;
+		//  return false; 
 		} 
 
 }
