@@ -6,12 +6,13 @@ public class GoogleBillboard {
 		{        
 		   
 		    System.out.println(dNum);
-		    for (int i=0;i<e.length();i++){
-		  	double sNum = 0; 
-			  if (isPrime(sNum) == true){
-				String digits = e.substring(i,i+10);
-		    		long dNum = Long.parseLong(digits);
-				System.out.println("dNum");
+		    for (int i=2;i<e.length();i++){
+			    	long dNum = Long.parseLong(e.substring(i,i+10));
+		  	//double sNum = 0; 
+			  if (isPrime(dNum) == true){
+				//String digits = 
+		    	
+				System.out.println(dNum);
 				break;
 			  }
 		    }
