@@ -6,11 +6,11 @@ public class GoogleBillboard {
 		{        
 		    String digits = e.substring(2,12);
 		    double dNum = Double.parseDouble(digits);
-		   System.out.println(dNum);
+		    System.out.println(dNum);
 		    for (int i=0;i<e.length();i++){
 		  	double sNum = 0; 
 			  if (isPrime(sNum) == true){
-			    System.out.println("sNum");
+			    System.out.println("dNum");
 			    break;
 			  }
 		    }
