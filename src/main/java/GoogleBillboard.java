@@ -5,7 +5,7 @@ public class GoogleBillboard {
 		public static void main(final String[] args)  
 		{        
 		   
-		    System.out.println(dNum);
+		   // System.out.println(dNum);
 		    for (int i=2;i<e.length();i++){
 			    	long dNum = Long.parseLong(e.substring(i,i+10));
 		  	//double sNum = 0; 
