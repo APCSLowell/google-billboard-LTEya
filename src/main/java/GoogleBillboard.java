@@ -22,8 +22,7 @@ public class GoogleBillboard {
 		{
 		 if (dNum>1){
 		    for (int i=2; i<Math.sqrt(dNum);i++){
-		      if (dNum%i==0) {
-			      return false;
+		      if (dNum%i==0) return false;
 		   }
 		    return true;
 		  }
