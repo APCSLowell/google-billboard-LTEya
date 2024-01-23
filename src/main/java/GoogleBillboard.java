@@ -20,13 +20,14 @@ public class GoogleBillboard {
 	
 		public static boolean isPrime(long dNum)  
 		{
-		 // if (dNum>2){
+		 if (dNum>1){
 		    for (int i=2; i<Math.sqrt(dNum);i++){
 		      if (dNum%i==0) {
 			      return false;
 		   }
 		    return true;
 		  }
+			return false;
 		//  if (dNum ==2) return true;
 		//  return false; 
 		} 
